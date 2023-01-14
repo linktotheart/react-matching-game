@@ -160,7 +160,7 @@ export default function Match() {
       { 
         isWon && <YouWon time={time} resetGame={resetGame} />
       }
-      <div className="bg-pumpkin-50 border gap-4  border-pumpkin-200 rounded-lg grid grid-cols-4 p-4">
+      <div className="bg-pumpkin-50 border gap-2 md:gap-4  border-pumpkin-200 rounded-lg grid grid-cols-4 p-3 md:p-4">
         {
           list.map((emo, idx) => {
             return <Card data={emo} handleClick={handleClick} id={idx} key={emo.emoji + idx} />
