@@ -84,7 +84,7 @@ export default function Match() {
       emoji: '✨',
       state: ''
     },
-  ]
+  ].sort(() => Math.random() - 0.5)
   // STATES 
   // List of Card emojis
   const [list, setList] = useState([...emojis])
